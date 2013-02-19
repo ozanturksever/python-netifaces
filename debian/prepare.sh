@@ -53,6 +53,9 @@ do
          p)
              package_directory=$OPTARG
              ;;
+         t)
+             dst_dist=$OPTARG
+             ;;
          ?)
              usage
              ;;
