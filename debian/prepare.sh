@@ -32,7 +32,7 @@ function usage {
     exit 1
 }
 
-while getopts “n:v:r:p:t:” OPTION
+while getopts "n:v:r:p:t:" OPTION
 do
      case $OPTION in
          h)
@@ -52,6 +52,9 @@ do
              ;;
          p)
              package_directory=$OPTARG
+             ;;
+         t)
+             dst_dist=$OPTARG
              ;;
          ?)
              usage
